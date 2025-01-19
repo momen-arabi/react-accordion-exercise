@@ -5,7 +5,7 @@ export function Item({ faq, number, openStatus, onClickHandle }) {
     <div className={`item ${openStatus ? `open` : ``}`} onClick={onClickHandle}>
       <div className="number">{`0${number}`}</div>
       <div className="title">{faq.title}</div>
-      <div className="title">{openStatus ? "-" : "+"}</div>
+      <div className="icon">{openStatus ? "-" : "+"}</div>
       {openStatus ? (
         <div className="content-box">
           <ul>{faq.text}</ul>
