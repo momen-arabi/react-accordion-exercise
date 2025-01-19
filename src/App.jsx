@@ -4,15 +4,15 @@ import "./styles.css";
 const faqs = [
   {
     title: "Where are these chairs assembled?",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, quaerat temporibus quas dolore provident nisi ut aliquid ratione beatae sequi aspernatur veniam repellendus.",
+    text: "Our chairs are assembled in our state-of-the-art facility located in Italy, ensuring top-notch craftsmanship and quality control.",
   },
   {
     title: "How long do I have to return my chair?",
-    text: "Pariatur recusandae dignissimos fuga voluptas unde optio nesciunt commodi beatae, explicabo natus.",
+    text: "You have 30 days from the date of delivery to return your chair, provided it is in its original condition and packaging.",
   },
   {
     title: "Do you ship to countries outside the EU?",
-    text: "Excepturi velit laborum, perspiciatis nemo perferendis reiciendis aliquam possimus dolor sed! Dolore laborum ducimus veritatis facere molestias!",
+    text: "Yes, we offer international shipping to most countries worldwide. Additional shipping fees and customs duties may apply depending on your location.",
   },
 ];
 
