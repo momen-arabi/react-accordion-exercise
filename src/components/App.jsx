@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./styles.css";
+import { Accordion } from "./Accordion";
 
 const faqs = [
   {
@@ -27,33 +28,6 @@ export default function App() {
           <Accordion faq={faq} key={index + 1} number={index + 1} />
         ))}
       </div>
-    </div>
-  );
-}
-
-function Accordion({ faq, number }) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  function handleClick() {
-    setIsOpen(!isOpen);
-  }
-
-  return <Item faq={faq} number={number} openStatus={isOpen} onClickHandle={handleClick} />;
-}
-
-function Item({ faq, number, openStatus, onClickHandle }) {
-  return (
-    <div className={`item ${openStatus ? `open` : ``}`} onClick={onClickHandle}>
-      <div className="number">{`0${number}`}</div>
-      <div className="title">{faq.title}</div>
-      <div className="title">{openStatus ? "-" : "+"}</div>
-      {openStatus ? (
-        <div className="content-box">
-          <ul>{faq.text}</ul>
-        </div>
-      ) : (
-        ""
-      )}
     </div>
   );
 }
