@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles.css";
 import { Accordion } from "./Accordion";
 
@@ -18,6 +18,12 @@ const faqs = [
 ];
 
 export default function App() {
+  const [openNo, setOpenNo] = useState("");
+
+  const handleOpenNo = function (id) {
+    setOpenNo(id);
+    console.log("Clicked Number: " + openNo);
+  };
   return (
     <div className="flex flex-col items-center justify-center mx-auto w-7/12 py-20">
       <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl uppercase">
@@ -25,7 +31,7 @@ export default function App() {
       </h1>
       <div className="accordion mt-10 w-full">
         {faqs.map((faq, index) => (
-          <Accordion faq={faq} key={index + 1} number={index + 1} />
+          <Accordion faq={faq} key={index + 1} number={index + 1} currNo={openNo} onChangeNo={handleOpenNo} />
         ))}
       </div>
     </div>

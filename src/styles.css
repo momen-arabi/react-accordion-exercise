@@ -72,3 +72,9 @@ body {
 .open .title {
   color: #087f5b;
 }
+
+/* SELECTION */
+::selection {
+  background-color: #087f5b;
+  color: #fff;
+}
