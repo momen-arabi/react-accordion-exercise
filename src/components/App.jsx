@@ -21,9 +21,9 @@ export default function App() {
   const [openNo, setOpenNo] = useState("");
 
   const handleOpenNo = function (id) {
-    setOpenNo(id);
-    console.log("Clicked Number: " + openNo);
+    setOpenNo(id === openNo ? "" : id);
   };
+
   return (
     <div className="flex flex-col items-center justify-center mx-auto w-7/12 py-20">
       <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl uppercase">
