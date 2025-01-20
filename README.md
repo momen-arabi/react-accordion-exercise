@@ -8,4 +8,4 @@ This is a simple React project that implements an accordion component to demonst
 - Each item can be toggled independently, displaying or hiding content.
 - Built using React functional components with hooks.
 - **Tailwind CSS** for utility-first styling.
-- **Flowbite** for pre-built UI components (like the Accordion).
+- **Flowbite** for pre-built UI components.
